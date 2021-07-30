@@ -87,7 +87,7 @@ nav .nav-bar :any-link{
 .car-details {
 	color: black;
 	padding: 5px;
-   text-decoration: none;
+  text-decoration: none;
 }
 
 .car-details h3 {
@@ -152,6 +152,8 @@ button:hover {
 }
 
 
+
+
 /* edit form */
 
 form {
@@ -166,4 +168,26 @@ input {
 	padding: 0.3em;
 	margin: 0.5em 0;
 	font-size: 1.5em;
+}
+
+
+.cancel {
+   text-decoration: none;
+   margin: 5px;
+   padding: 5px; 
+   color: black;
+   background-color: #83a4d4;
+   padding: 0.5em 1em;
+	border: none;
+	font-size: 1em;
+	transition: all 1s ease;
+	outline: none;
+	letter-spacing: 0.1em;
+	border-radius: 5px;
+   display: flex;
+   justify-content: center;
+}
+
+.cancel :hover {
+   color: coral;
 }

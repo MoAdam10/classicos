@@ -6,8 +6,10 @@ import anime from 'animejs'
 import SingleCar from './SingleCar'
 import EditCar from './EditCar'
 
+
+
 const Routes = () => {
-   const animation = anime({
+   const animate = anime({
       targets: '#home',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutSine',
@@ -21,7 +23,7 @@ const Routes = () => {
          <div>
             <nav>
                <div className="nav-bar">
-                  <Link to="/" onLoad={() => animation} id="home">Home</Link>
+                  <Link to="/" id="home" onLoad={() => animate}>Home</Link>
                   <Link to="/cars">Collection</Link>
                   <Link to="/favorites">Favorites</Link>
 
@@ -33,6 +35,8 @@ const Routes = () => {
             <Route exact path='/cars/:id' component={SingleCar}/>
             <Route exact path='/cars/:id/edit' component={EditCar}/>
          </Switch>
+        
+           
          </div>
       </Router>
    )

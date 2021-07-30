@@ -59,7 +59,7 @@ const cars = [
       make: 'Delorean',
       model: 'DMC 12',
       description: 'The DeLorean DMC-12 is a sports car that was manufactured in Northern Ireland to be sold in America from 1981 to 1982. The car is most commonly referred to as the DeLorean, as it was the only model ever produced by the company. The first prototype appeared in 1976 and 9,000 DeLoreans were produced by 1982, when production stopped. Today, only about 6,500 of these cars are believed to exist. This car is most well known for being used a time machine in the Back to the Future movies.',
-      imageUrl: 'http://www.truckchamp.com/60%20Iconic%20and%20Classic%20Cars_files/1983-delorean-dmc-12-dave_7221-l.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Delorean_dmc12_rear.jpg'
    },
 ]
 

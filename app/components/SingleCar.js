@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { Link, BrowserRouter as Router } from 'react-router-dom';
 import { deleteCarThunk } from '../redux/cars';
 import { fetchSingleCar} from '../redux/singleCar';
+import aos from 'aos'
+import anime from 'animejs';
 
 export class SingleCar extends React.Component {
 	componentDidMount() {
@@ -10,12 +12,21 @@ export class SingleCar extends React.Component {
 	}
 	render() {
 		const { car } = this.props;
-      console.log(car)
+
+      const animate = anime({
+         targets: '.car-image',
+         translateX: 50,
+         width: '100%', // -> from '28px' to '100%',
+         easing: 'easeInOutQuad',
+         direction: 'alternate',
+         loop: true
+       });
+
 		return (
 			<div>
 				<div id="single-car-container">
 					<div key={car.id} className="single-car">
-						<div className="car-image">
+						<div className="car-image" onLoad={() => animate}>
 							<img src={car.imageUrl} />
 						</div>
 						<div className="car-details">
